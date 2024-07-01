@@ -58,12 +58,24 @@ export default function Home() {
               <h2 className="">Calculadora de ingestão de água</h2>
             </div>
           </a>
-          {/* <nav className="flex gap-3 text-sky-500">
+          {/* <nav className="flex gap-3 text-cyan-500">
             <a href="#sobre">Sobre</a>
             <a href="#blog">Blog</a>
             <a href="#contato">Contato</a>
           </nav> */}
         </header>
+        <section className="max-w-4xl m-3 flex flex-row gap-4">
+          <p className="max-w-lg text-xl">
+            A hidratação adequada é essencial para o bom funcionamento do corpo e da mente. O WaterDay oferece uma maneira prática de calcular sua ingestão de água diária, ajudando você a manter-se no caminho certo para uma vida mais saudável. 
+          </p>
+          <form action="" className="bg-white p-3 rounded-md m-2 flex flex-col w-96">
+            <label htmlFor="peso" className="text-cyan-700 m-2">Peso</label>
+            <input type="number" className="bg-cyan-200 rounded-md m-2"/>
+            <label htmlFor="idade" className="text-cyan-700 m-2">Idade</label>
+            <input type="number" className="bg-cyan-200 rounded-md m-2"/>
+            <input type="submit" value="Calcular" className="bg-cyan-400 text-white rounded-md p-2 m-2 w-40 flex" />
+          </form>
+        </section>
       </div>
     </main>
   );
