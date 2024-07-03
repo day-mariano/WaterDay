@@ -76,6 +76,7 @@ export default function Home() {
             <input type="submit" value="Calcular" className="bg-cyan-400 text-white rounded-md p-2 m-2 w-40 flex" />
           </form>
         </section>
+        <footer className="text-white flex justify-center mb-2">Desenvolvido por Dayana Mariano 2024</footer>
       </div>
     </main>
   );
