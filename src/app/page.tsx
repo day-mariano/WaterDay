@@ -44,7 +44,7 @@ export default function Home() {
             </filter>
           </defs>
         </svg>
-      <div className=" flex flex-col h-full mt-4 mr-4 justify-between">
+      <div className=" flex flex-col h-full mt-6 mr-4 justify-between">
         <header className=" flex row items-center justify-start">
           <a href="/" className="flex row items-center">
             <Image
@@ -54,7 +54,7 @@ export default function Home() {
               height={70}
             />
             <div className="ml-3">
-              <h1 className="text-2xl text-cyan-600">WaterDay</h1>
+              <h1 className="text-2xl font-extrabold text-cyan-500">WaterDay</h1>
               <h2 className="">Calculadora de ingestão de água</h2>
             </div>
           </a>
@@ -65,15 +65,15 @@ export default function Home() {
           </nav> */}
         </header>
         <section className="max-w-4xl m-3 flex flex-row gap-4">
-          <p className="max-w-lg text-xl">
+          <p className="max-w-lg text-xl leading-loose">
             A hidratação adequada é essencial para o bom funcionamento do corpo e da mente. O WaterDay oferece uma maneira prática de calcular sua ingestão de água diária, ajudando você a manter-se no caminho certo para uma vida mais saudável. 
           </p>
-          <form action="" className="bg-white p-3 rounded-md m-2 flex flex-col w-96">
-            <label htmlFor="peso" className="text-cyan-700 m-2">Peso</label>
-            <input type="number" className="bg-cyan-200 rounded-md m-2"/>
-            <label htmlFor="idade" className="text-cyan-700 m-2">Idade</label>
-            <input type="number" className="bg-cyan-200 rounded-md m-2"/>
-            <input type="submit" value="Calcular" className="bg-cyan-400 text-white rounded-md p-2 m-2 w-40 flex" />
+          <form action="" className="bg-white p-4 rounded-md m-2 flex flex-col items-center">
+            <label htmlFor="peso" className="text-cyan-700 text-xl font-semibold mb-2">Peso</label>
+            <input type="number" placeholder="digite seu peso" className="bg-cyan-200 w-48 rounded-md mb-3 p-2 flex flex-row"/>
+            <label htmlFor="idade" className="text-cyan-700 text-xl font-semibold mb-2">Idade</label>
+            <input type="number" placeholder="digite sua idade" className="bg-cyan-200 w-48 rounded-md mb-2 p-2 flex"/>
+            <input type="submit" value="Calcular" className="bg-cyan-500 text-white font-bold rounded-md p-2 m-auto mt-3 w-40 flex" />
           </form>
         </section>
         <footer className="text-white flex justify-center mb-2">Desenvolvido por Dayana Mariano 2024</footer>
